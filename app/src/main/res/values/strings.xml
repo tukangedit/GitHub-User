@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GitHub User</string>
+    <string name="image_item_photo">Foto Profil</string>
+    <string name="username">User Name</string>
+    <string name="masukan_user_name">Masukan User Name</string>
+    <string name="tombol_search">Tombol Search</string>
+    <string name="html_url">Html URL</string>
+    <string name="github_icon">Icon GitHub</string>
+    <string name="tab_1">Followers</string>
+    <string name="tab_2">Following</string>
+    <string name="foto_profile_detail">foto_profile_detail</string>
+</resources>
