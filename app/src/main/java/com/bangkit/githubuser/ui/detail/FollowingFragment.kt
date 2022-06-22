@@ -1,14 +1,12 @@
-package com.bangkit.githubuser.fragments
+package com.bangkit.githubuser.ui.detail
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.bangkit.githubuser.activity.DetailUserActivity
-import com.bangkit.githubuser.viewmodel.FollowingViewModel
 import com.bangkit.githubuser.R
-import com.bangkit.githubuser.adapters.UserAdapter
+import com.bangkit.githubuser.ui.main.UserAdapter
 import com.bangkit.githubuser.databinding.FragmentFollowBinding
 
 class FollowingFragment : Fragment(R.layout.fragment_follow) {
@@ -27,6 +25,7 @@ class FollowingFragment : Fragment(R.layout.fragment_follow) {
 
         adapter = UserAdapter()
         adapter.notifyDataSetChanged()
+
 
         binding.apply {
             rvUser.setHasFixedSize(true)

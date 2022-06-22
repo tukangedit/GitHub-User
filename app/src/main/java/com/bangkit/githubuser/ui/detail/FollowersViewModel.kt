@@ -1,11 +1,11 @@
-package com.bangkit.githubuser.viewmodel
+package com.bangkit.githubuser.ui.detail
 
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.bangkit.githubuser.api.RetrofitClient
-import com.bangkit.githubuser.models.User
+import com.bangkit.githubuser.data.model.User
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

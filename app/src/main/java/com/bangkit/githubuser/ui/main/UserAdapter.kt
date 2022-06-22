@@ -1,15 +1,16 @@
-package com.bangkit.githubuser.adapters
+package com.bangkit.githubuser.ui.main
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bangkit.githubuser.databinding.ItemUserBinding
-import com.bangkit.githubuser.models.User
+import com.bangkit.githubuser.data.model.User
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 
 class UserAdapter : RecyclerView.Adapter<UserAdapter.UserViewHolder>() {
     private val list = ArrayList<User>()
+
     private var onItemClickCallback: OnItemClickCallback? = null
 
     fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
@@ -33,7 +34,7 @@ class UserAdapter : RecyclerView.Adapter<UserAdapter.UserViewHolder>() {
 
     override fun getItemCount(): Int = list.size
 
-    inner class UserViewHolder(val binding: ItemUserBinding) :
+    inner class UserViewHolder(private val binding: ItemUserBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(user: User) {
             binding.root.setOnClickListener {

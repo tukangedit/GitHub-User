@@ -1,4 +1,4 @@
-package com.bangkit.githubuser.models
+package com.bangkit.githubuser.data.model
 
 data class DetailUserResponse(
     val login: String,

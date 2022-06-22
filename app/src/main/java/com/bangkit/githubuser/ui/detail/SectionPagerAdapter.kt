@@ -1,11 +1,9 @@
-package com.bangkit.githubuser.adapters
+package com.bangkit.githubuser.ui.detail
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.bangkit.githubuser.fragments.FollowersFragment
-import com.bangkit.githubuser.fragments.FollowingFragment
 
 class SectionPagerAdapter(activity: AppCompatActivity, data: Bundle) : FragmentStateAdapter(activity) {
     private var fragmentBundle: Bundle = data
